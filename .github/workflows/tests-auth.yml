@@ -1,6 +1,11 @@
 name: tests-auth
 
 on:
+    push:
+        path:
+            - 'auth/**'
+        branches:
+            - main
     pull_request:
         paths:
             - 'auth/**'
